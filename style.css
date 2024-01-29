@@ -1,0 +1,39 @@
+/* CSS (style.css) */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/mathematics-6784625_1280.webp');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    opacity: 2.0;
+}
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#tableContainer {
+    margin-top: 20px;
+    font-size: 18px;
+}

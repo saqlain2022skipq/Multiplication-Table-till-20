@@ -1,19 +1,20 @@
-alert("Welcome To my Page")
+// JavaScript (app.js)
+function generateTable() {
+    var inputNum = document.getElementById("numberInput").value;
+    var tableContainer = document.getElementById("tableContainer");
 
-confirm (" Do you want to see the Table of any Number?")
+    if (!inputNum || isNaN(inputNum)) {
+        alert("Please enter a valid number");
+        return;
+    }
 
-var num = prompt("Enter the number: ")
+    tableContainer.innerHTML = ""; 
 
-if (num <= 20){
+    for (let num = inputNum; num <= 20; num++) {
+        tableContainer.innerHTML += `<p><strong>TABLE OF ${num}</strong></p>`;
 
-    for (num; num<=20; num++){
-        
-        document.write("<br>"+`TABLE OF ${num}`+"<br>")
-        for (i=1 ; i<= 10; i++){
-            document.write(`${num} x ${i} = `, num*i + "<br>");
+        for (let i = 1; i <= 10; i++) {
+            tableContainer.innerHTML += `${num} x ${i} = ${num * i}<br>`;
         }
     }
-}
-else{
-    document.write('The Number is greater than 20!')
 }
